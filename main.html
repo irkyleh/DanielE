@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main D.Etchels</title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src="C:\Users\irkyl\OneDrive\Desktop\DE\jquery-3.4.1.min.js"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+</style>
+  </head>
+  <body>
+    <div id="header">
+<img src="header.png" alt="header image">
+<div id="navbar">
+  <ul>
+    <li><a href="main.html">home</a></li>
+    <li><a href="contact.html">contact</a></li>
+    <li><a href="work.html">showreel/work</a></li>
+    </ul>
+    </div>
+    <div id="mainContent">
+      <div id="latest">
+        <h2>Latest</h2>
+      </div>
+        <div class="column">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in
+           the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.</p>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in
+               the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.</p>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but also the leap into
+                  electronic typesetting, remaining essentially unchanged. It was popularised in
+                   the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker
+                    including versions of Lorem Ipsum.</p>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type
+                      specimen book. It has survived not only five centuries, but also the leap into
+                      electronic typesetting, remaining essentially unchanged. It was popularised in
+                       the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.</p>
+      </div>
+
+
+
+
+
+
+    </div>
+    <div class="slideshowslides">
+  <img class="mySlides" src="camera.png" style="width:40%">
+  <img class="mySlides" src="c2.png" style="width:40%">
+  <img class="mySlides" src="c3.png" style="width:40%">
+  <img class="mySlides" src="sound.png" style="width:40%">
+<div id="slideb">
+  <button class="slideshow" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slideshow" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+
+      </div>
+      <script>
+      var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+      </script>
+    </body>
+
+
+
+
+
+
+
+
+</html>
